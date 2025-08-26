@@ -26,13 +26,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore
-        run: dotnet restore dev.habit.api.sln
+        run: dotnet restore dev.habbit.api.sln
 
       - name: Build
-        run: dotnet build dev.habit.api.sln --configuration Release --no-restore
+        run: dotnet build dev.habbit.api.sln --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test dev.habit.api.sln --configuration Release --no-restore --no-build
+        run: dotnet test dev.habbit.api.sln --configuration Release --no-restore --no-build
 
       - name: Publish
-        run: dotnet publish dev.habit.api.sln --configuration Release --no-restore --no-build
+        run: dotnet publish dev.habbit.api.sln --configuration Release --no-restore --no-build
