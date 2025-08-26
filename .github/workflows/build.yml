@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: dev.habit.api
+        working-directory: dev.habbit.api
 
     steps:
       - uses: actions/checkout@v4
